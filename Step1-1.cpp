@@ -3,34 +3,34 @@
 // for any library tye #include<library_name>
 // ex. #include<math.h>, #include<string>
 
-/* int main() {
+int main() {
 
     std:: cout<< "Hey, Striver";
     return 0;
 }
 
-*/
+
 
 using namespace std;
 
-/* int main(){
+int main(){
 
     cout<< "Hey Striver" << endl << "Hey Raj!" << "\n";
     cout<< "Hey Shivam!";
-} */
+} 
 
 // for adding new line we use endl or "\n" character
 // for doing multiple line comments press Shift + Alt + A
 
 // for printing two variable x and y
 
-/* int main(){
+ int main(){
 
     int x,y ;
     cin >> x >> y;
     cout << "value of x: " << x << " and y: " << y;
     return 0;
-} */
+} 
 
 
 // for including all the libraries that cpp has
@@ -38,54 +38,54 @@ using namespace std;
 // #include <bits/stdc++.h>
 
 
-// int main() {
+int main() {
 
-//     // int x
-//     // int has a value b/w -2,147,483,648 to 2,147,483,647 and takes a 4 Bytes as space 
-//     // int x = 10;
-//     // beyond that range we use long
+    // int x
+    // int has a value b/w -2,147,483,648 to 2,147,483,647 and takes a 4 Bytes as space 
+    int x = 10;
+    // beyond that range we use long
   
-//     long x1;
-//     // cin >> x;
-//     // long long
-//     // long long x = 15000000;
-//     cin >> x1 ;
-//     cout << "Value of x1: " << x1 << endl;
-//     return 0;
-// }
+    long x1;
+    cin >> x;
+    
+    long long x = 15000000;
+    cin >> x1 ;
+    cout << "Value of x1: " << x1 << endl;
+    return 0;
+}
 
 
 // float data type
 
-// int main() {
+int main() {
 
-//     // floating data types
-//     float x =5.6;
-//     float y ;
-//     // double is a expansion of float just for a large value
-//     double z = 34.44;
-//     cin >> y ;
-//     cout <<"Value of y is: " <<  y << endl;
-//     cout <<"Value of z is: " <<  z << endl;
+    // floating data types
+    float x =5.6;
+    float y ;
+    // double is a expansion of float just for a large value
+    double z = 34.44;
+    cin >> y ;
+    cout <<"Value of y is: " <<  y << endl;
+    cout <<"Value of z is: " <<  z << endl;
 
-//     return 0;
-// }
+    return 0;
+}
 
 
 // string data type
 
-// int main(){
+int main(){
 
-//     string s;
-//     // only print Hello if input hello Striver was given to print both
-//     string s2;
+    string s;
+    // only print Hello if input hello Striver was given to print both
+    string s2;
 
-//     cin >> s>> s2;
-//     cout << s << " "  << s2;
-//     return 0;
+    cin >> s>> s2;
+    cout << s << " "  << s2;
+    return 0;
 
 
-// }
+}
 
 int main(){
 
@@ -98,6 +98,37 @@ int main(){
 
 }
 
+
+int main() {
+
+    // char 
+    // char ch = 'g';
+    char ch;
+    cin >> ch ;
+    cout << ch;
+    return 0;
+
+}
+
+
+// write a programe that takes an input of age
+// and prints if you are adult or not
+// >= 18 ,yes adult
+
+
+int main() {
+
+    int age;
+    cin >> age;
+    if(age >=18){
+        cout<< "You are an adult";
+    }
+    else {
+        cout << "You are not a adult";
+    }
+
+    return 0;
+}
 
 
 
