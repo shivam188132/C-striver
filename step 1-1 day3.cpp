@@ -123,6 +123,8 @@ int main() {
 // Functions ( Pass by reference and value)
 
 // its meaning 
+//  pass by value
+
 
 void dosomething(int num) {
     // cout << num << endl;
