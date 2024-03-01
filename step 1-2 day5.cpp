@@ -106,3 +106,23 @@ int main(){
     cin >> n;
     triangle2(n);
 }
+
+/*
+
+* * *
+* *
+*
+
+*/
+
+void seeding(int n) {
+	// Write your code here.
+	int i,j;
+	 for (int i = 0; i < n; i++) {
+        // Adjust the inner loop to print '*' until n - i
+        for (int j = 0; j < n - i; j++) {
+          cout << "* "; // Print '*'
+        }
+        cout << endl; // Move to the next line after each row
+         }
+}

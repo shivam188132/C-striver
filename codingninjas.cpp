@@ -385,6 +385,64 @@ void triangle(int n) {
 }
 
 
+/*
 
+Problem statement
+Sam is planting trees on the upper half region (separated by the left diagonal) of the square shared field.
+
+For every value of ‘N’, print the field if the trees are represented by ‘*’.
+
+Example:
+Input: ‘N’ = 3
+
+Output: 
+* * *
+* *
+*
+
+*/
+
+void seeding(int n) {
+	// Write your code here.
+	int i,j;
+	 for (int i = 0; i < n; i++) {
+        // Adjust the inner loop to print '*' until n - i
+        for (int j = 0; j < n - i; j++) {
+          cout << "* "; // Print '*'
+        }
+        cout << endl; // Move to the next line after each row
+         }
+}
+
+
+/*
+
+Problem statement
+Ninja was very fond of patterns. For a given integer ‘N’, he wants to make the N-Star Triangle.
+
+Example:
+Input: ‘N’ = 3
+
+Output: 
+
+  *
+ ***
+*****
+
+*/ 
+
+void nStarTriangle(int n) {
+    for (int i = 0; i < n; i++) {
+        // Print spaces
+        for (int j = 0; j < n - i - 1; j++) {
+            cout << " ";
+        }
+        // Print stars
+        for (int k = 0; k < 2 * i + 1; k++) {
+            cout << "*";
+        }
+        cout << endl; // Move to the next line after each row
+    }
+}
 
 
