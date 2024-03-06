@@ -307,10 +307,7 @@ void numberCrown2(int n) {
 
 
 
-void nNumberTriangle12(int n) {
-    // Write your code here.
-    
-}
+
 
 
 
@@ -336,5 +333,5 @@ void nNumberTriangle12(int n) {
 int main(){
     int n;
     cin >> n;
-     nNumberTriangle12(n);
+    numberCrown2(n);
 }
