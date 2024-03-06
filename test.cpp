@@ -2,18 +2,20 @@
 #include <string>
 using namespace std;
 
-int main() {
-    int num;
-    // cout << "Enter an integer: ";
-    cin >> num;
+void nLetterTriangle(int n) {
+    // Write your code here.
+    for (int i =1; i<=n ;i++){
+        for (char ch='A';ch <'A'+ (n-i); ch++)
+        {cout << ch<< " ";}
 
-    // Convert integer to string
-    string numStr = to_string(num);
+    }
+    cout << endl;
 
-    // Calculate the length of the string
-    int length = numStr.length();
 
-    cout << length << endl;
+}
 
-    return 0;
+int main(){
+    int n;
+    cin >> n;
+     nLetterTriangle(n);
 }
