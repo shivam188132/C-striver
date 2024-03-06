@@ -325,12 +325,14 @@ Output:
 
 */
 
-void nNumberTriangle12(int n) {
+void nNumberTriangle(int n) {
+    int num =1;
     // Write your code here.
     for(int i=1; i<=n ;i++){
 
         for (int j=1; j<=i;j++){
-            cout << i+1;
+            cout << num<< " ";
+            num = num+1;
             
         }
         cout << endl;
@@ -349,5 +351,5 @@ void nNumberTriangle12(int n) {
 int main(){
     int n;
     cin >> n;
-     nNumberTriangle12(n);
+    //  nNumberTriangle12(n);
 }
