@@ -307,19 +307,17 @@ void numberCrown2(int n) {
 
 
 
+void nNumberTriangle12(int n) {
+    // Write your code here.
+    for(int i=1; i<=n ;i++){
 
-
-
-
-
-
-
-
-
-
-
-
-
+        for (int j=1; j<=i;j++){
+            cout << i+1;
+            
+        }
+        cout << endl;
+    }
+}
 
 
 
@@ -333,5 +331,5 @@ void numberCrown2(int n) {
 int main(){
     int n;
     cin >> n;
-    numberCrown2(n);
+     nNumberTriangle12(n);
 }

@@ -280,6 +280,15 @@ void nStarTriangle(int n) {
 }
 
 
+/*
+
+Output: 
+
+1         1
+1 2     2 1
+1 2 3 3 2 1
+
+*/
 void numberCrown2(int n) {
     // Write your code here.
     // declare spaces
@@ -306,23 +315,27 @@ void numberCrown2(int n) {
 }
 
 
+/*
+
+Output: 
+
+1
+2 3
+4 5 6
+
+*/
 
 void nNumberTriangle12(int n) {
     // Write your code here.
-    
+    for(int i=1; i<=n ;i++){
+
+        for (int j=1; j<=i;j++){
+            cout << i+1;
+            
+        }
+        cout << endl;
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
