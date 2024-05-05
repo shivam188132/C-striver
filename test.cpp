@@ -1,41 +1,35 @@
 #include <iostream>
 #include <vector>
-#include <algorithm>
-
+#include <utility> // for pair
 using namespace std;
 
-int main() {
-    int T;
-    cin >> T;
-    
-    while (T--) {
-        int M, x, y;
-        cin >> M >> x >> y;
-        
-        vector<int> cops(M);
-        for (int i = 0; i < M; ++i) {
-            cin >> cops[i];
-        }
-        
-        sort(cops.begin(), cops.end());
-        
-        int safeHouses = 0;
-        int coverage = x * y;
-        for (int i = 1; i <= 100; ++i) {
-            bool safe = true;
-            for (int j = 0; j < M; ++j) {
-                if (abs(i - cops[j]) <= coverage) {
-                    safe = false;
-                    break;
-                }
-            }
-            if (safe) {
-                ++safeHouses;
-            }
-        }
-        
-        cout << safeHouses << endl;
+void explainVector(){
+    vector<int> v;           // creates an empty container {}
+
+    v.push_back(1);                     // {} --> {1}   1 is inserted inside the vector  
+    v.emplace_back(2);                  // {1} --> {1,2}  dynamically size is increased and 2 is inserted at the end
+
+    // Print each element of the vector
+    cout << "Vector v: ";
+    for(int i = 0; i < v.size(); ++i) {
+        cout << v[i] << " ";
     }
-    
+    cout << endl;
+
+    // vector of pair datatype 
+    vector<pair<int, int>> vec;        
+    vec.push_back({1,2});
+    vec.emplace_back(1,2);
+
+    vector<int> v1(5,20);
+    vector<int> v2(v1);
+    vector<int>::iterator it = v.begin();
+    it++;
+    cout << *(it) << " ";
+}
+
+int main() {
+    // Call the explainVector() function
+    explainVector();
     return 0;
 }
